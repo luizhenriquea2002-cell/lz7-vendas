@@ -54,4 +54,15 @@
 </html>
 <section class="banner">
   <img src="banner.jpg" alt="Banner LZ7">
-</section>
+</section><div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="fecharModal()" class="fechar">&times;</span>
+    
+    <h2 id="produtoNome"></h2>
+    <p id="produtoPreco"></p>
+
+    <p>Pagamento via PIX</p>
+
+    <button onclick="finalizarCompra()">Finalizar no Telegram</button>
+  </div>
+</div>
