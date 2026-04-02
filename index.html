@@ -72,3 +72,25 @@
   <p id="total">Total: R$ 0</p>
   <button onclick="finalizarCompra()">Finalizar</button>
 </div>
+<div id="modal" class="modal">
+  <div class="modal-content">
+
+    <span onclick="fecharModal()" class="fechar">&times;</span>
+
+    <h2 id="produtoNome"></h2>
+    <p id="produtoPreco"></p>
+
+    <hr>
+
+    <h3>💳 Pagamento via PIX</h3>
+
+    <p id="chavePix">08584531181</p>
+
+    <button onclick="copiarPix()">📋 Copiar Chave PIX</button>
+
+    <br><br>
+
+    <button onclick="finalizarCompra()">✅ Já paguei</button>
+
+  </div>
+</div>
