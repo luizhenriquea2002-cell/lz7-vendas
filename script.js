@@ -124,3 +124,4 @@ function copiarPix(){
   navigator.clipboard.writeText(chave);
   alert("Chave PIX copiada!");
 }
+<button onclick="alert('clicou')">Comprar</button>
