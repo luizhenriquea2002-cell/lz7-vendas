@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Comprar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1 id="jogo"></h1>
+</header>
+
+<section class="compras">
+
+  <h2>Escolha o pacote</h2>
+
+  <div class="pacote" onclick="comprar(10)">
+    100 Moedas - R$10
+  </div>
+
+  <div class="pacote" onclick="comprar(20)">
+    250 Moedas - R$20
+  </div>
+
+  <div class="pacote" onclick="comprar(50)">
+    700 Moedas - R$50
+  </div>
+
+</section>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const jogo = params.get("jogo");
+document.getElementById("jogo").innerText = jogo;
+
+function comprar(valor){
+  const msg = `Quero comprar ${jogo} - R$${valor}`;
+  window.open("https://t.me/Lz7vendas?text=" + encodeURIComponent(msg));
+}
+</script>
+
+</body>
+</html>
