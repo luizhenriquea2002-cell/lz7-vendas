@@ -1,51 +1,97 @@
 body {
   margin:0;
   font-family: Arial;
-  background:#050505;
+  background:#0b0b0b;
   color:white;
 }
 
-header {
+/* topo */
+.topo {
+  text-align:center;
   padding:20px;
-  text-align:center;
-  background: linear-gradient(90deg,#6a00ff,#00c3ff);
+  color:#ffd700;
+  font-weight:bold;
 }
 
-.grid {
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap:20px;
-  padding:30px;
+/* busca */
+.search {
+  padding:10px;
 }
 
-.game {
+.search input {
+  width:100%;
+  padding:15px;
+  border-radius:30px;
+  border:1px solid #ffd700;
   background:#111;
-  padding:30px;
+  color:white;
+}
+
+/* título */
+.titulo {
+  padding:15px;
+}
+
+.titulo h2 {
+  border-left:4px solid #ffd700;
+  padding-left:10px;
+}
+
+/* produtos */
+.produtos {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  padding:10px;
+}
+
+/* card */
+.card {
+  background:#111;
   border-radius:15px;
-  text-align:center;
-  cursor:pointer;
+  padding:15px;
+  border:1px solid #ffd70030;
   transition:0.3s;
 }
 
-.game:hover {
-  transform: scale(1.05);
-  box-shadow:0 0 20px #6a00ff;
+.card:hover {
+  transform:scale(1.05);
+  box-shadow:0 0 15px #ffd700;
 }
 
-.compras {
-  padding:30px;
-  text-align:center;
-}
-
-.pacote {
-  background:#111;
-  margin:10px auto;
-  padding:20px;
-  width:250px;
+/* imagem fake */
+.img {
+  height:120px;
+  background:linear-gradient(#222,#000);
   border-radius:10px;
-  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#ffd700;
+  font-weight:bold;
 }
 
-.pacote:hover {
-  background:#6a00ff;
+/* textos */
+.avaliacao {
+  color:gold;
+  font-size:14px;
+}
+
+.preco {
+  font-size:18px;
+  font-weight:bold;
+  margin-top:5px;
+}
+
+/* botão flutuante */
+.chat {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#ffd700;
+  color:black;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+  font-size:20px;
 }
