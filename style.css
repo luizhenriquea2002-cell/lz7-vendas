@@ -162,3 +162,19 @@ body {
   color: white;
   cursor: pointer;
 }
+.modal-content h3 {
+  color: #00ffcc;
+}
+
+#chavePix {
+  background: #000;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+  word-break: break-all;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  width: 100%;
+}
