@@ -129,3 +129,36 @@ body {
   cursor:pointer;
   font-size:20px;
 }
+.carrinho {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: #111;
+  padding: 15px;
+  border-left: 2px solid #6a00ff;
+}
+
+.carrinho h3 {
+  text-align: center;
+}
+
+.carrinho ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrinho li {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.carrinho button {
+  width: 100%;
+  padding: 10px;
+  background: #6a00ff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
