@@ -62,3 +62,10 @@ function finalizarCompra(){
 
   window.open("https://t.me/Lz7vendas?text=" + encodeURIComponent(msg));
 }
+function copiarPix(){
+  const chave = document.getElementById("chavePix").innerText;
+
+  navigator.clipboard.writeText(chave);
+
+  alert("Chave PIX copiada!");
+}
