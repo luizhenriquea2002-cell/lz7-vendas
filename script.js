@@ -91,3 +91,36 @@ function copiarPix(){
   navigator.clipboard.writeText(chave.innerText);
   alert("Chave PIX copiada!");
 }
+// 🧠 Variáveis do produto
+let produtoAtual = "";
+let precoAtual = "";
+
+// 🪟 Abrir modal
+function abrirModal(nome, preco){
+  produtoAtual = nome;
+  precoAtual = preco;
+
+  document.getElementById("produtoNome").innerText = nome;
+  document.getElementById("produtoPreco").innerText = "R$ " + preco;
+
+  document.getElementById("modal").style.display = "flex";
+}
+
+// ❌ Fechar modal
+function fecharModal(){
+  document.getElementById("modal").style.display = "none";
+}
+
+// 💳 Finalizar compra (vai pro Telegram)
+function finalizarCompra(){
+  const msg = `Quero comprar ${produtoAtual} por R$${precoAtual}`;
+  window.open("https://t.me/Lz7vendas?text=" + encodeURIComponent(msg));
+}
+
+// 📋 Copiar chave PIX
+function copiarPix(){
+  const chave = document.getElementById("chavePix").innerText;
+
+  navigator.clipboard.writeText(chave);
+  alert("Chave PIX copiada!");
+}
