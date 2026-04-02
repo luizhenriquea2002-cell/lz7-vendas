@@ -4,3 +4,6 @@ function comprar(jogo) {
 
   window.open(telegram + "?text=" + encodeURIComponent(mensagem));
 }
+function ir(jogo){
+  window.location.href = `produto.html?jogo=${jogo}`;
+}
