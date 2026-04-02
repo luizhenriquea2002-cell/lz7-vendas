@@ -5,6 +5,7 @@
 <title>LZ7 Vendas Gamer</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header class="topo">
@@ -22,56 +23,32 @@
 <section class="produtos">
 
   <div class="card">
-  <div class="img">ROBLOX</div>
-  <h3>1200 ROBUX</h3>
-  <p class="avaliacao">⭐⭐⭐⭐⭐ (108)</p>
-  <p class="preco">R$ 18.90</p>
-  <button onclick="abrirModal('1200 Robux', '18.90')">Comprar</button>
-</div> <div class="card">
-  <div class="img">ROBLOX</div>
-  <h3>1200 ROBUX</h3>
-  <p class="avaliacao">⭐⭐⭐⭐⭐ (108)</p>
-  <p class="preco">R$ 18.90</p>
-  <button onclick="abrirModal('1200 Robux', '18.90')">Comprar</button>
-</div><div class="card">
-  <div class="img">ROBLOX</div>
-  <h3>1200 ROBUX</h3>
-  <p class="avaliacao">⭐⭐⭐⭐⭐ (108)</p>
-  <p class="preco">R$ 18.90</p>
-  <button onclick="abrirModal('1200 Robux', '18.90')">Comprar</button>
-</div><div class="card">
-  <div class="img">ROBLOX</div>
-  <h3>1200 ROBUX</h3>
-  <p class="avaliacao">⭐⭐⭐⭐⭐ (108)</p>
-  <p class="preco">R$ 18.90</p>
-  <button onclick="abrirModal('1200 Robux', '18.90')">Comprar</button>
-</div>
+    <div class="img">ROBLOX</div>
+    <h3>1200 ROBUX</h3>
+    <p class="avaliacao">⭐⭐⭐⭐⭐ (108)</p>
+    <p class="preco">R$ 18.90</p>
+    <button onclick="abrirModal('1200 Robux','18.90')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <div class="img">ROBLOX</div>
+    <h3>1700 ROBUX</h3>
+    <p class="avaliacao">⭐⭐⭐⭐⭐ (86)</p>
+    <p class="preco">R$ 22.99</p>
+    <button onclick="abrirModal('1700 Robux','22.99')">Comprar</button>
+  </div>
+
 </section>
 
-<a href="https://t.me/Lz7vendas" class="chat">💬</a>
-
-</body>
-</html>
+<!-- BANNER -->
 <section class="banner">
   <img src="banner.jpg" alt="Banner LZ7">
-</section><div id="modal" class="modal">
-  <div class="modal-content">
-    <span onclick="fecharModal()" class="fechar">&times;</span>
-    
-    <h2 id="produtoNome"></h2>
-    <p id="produtoPreco"></p>
+</section>
 
-    <p>Pagamento via PIX</p>
+<!-- CHAT -->
+<a href="https://t.me/Lz7vendas" class="chat">💬</a>
 
-    <button onclick="finalizarCompra()">Finalizar no Telegram</button>
-  </div>
-</div><div class="card" onclick="window.location.href='roblox.html'">
-<div class="carrinho" id="carrinho">
-  <h3>🛒 Carrinho</h3>
-  <ul id="listaCarrinho"></ul>
-  <p id="total">Total: R$ 0</p>
-  <button onclick="finalizarCompra()">Finalizar</button>
-</div>
+<!-- MODAL (APENAS UM!) -->
 <div id="modal" class="modal">
   <div class="modal-content">
 
@@ -86,7 +63,7 @@
 
     <p id="chavePix">08584531181</p>
 
-    <button onclick="copiarPix()">📋 Copiar Chave PIX</button>
+    <button onclick="copiarPix()">📋 Copiar PIX</button>
 
     <br><br>
 
@@ -94,21 +71,9 @@
 
   </div>
 </div>
-<div id="modal" class="modal">
-  <div class="modal-content">
 
-    <span onclick="fecharModal()" class="fechar">&times;</span>
+<!-- SCRIPT (OBRIGATÓRIO) -->
+<script src="script.js"></script>
 
-    <h2 id="produtoNome"></h2>
-    <p id="produtoPreco"></p>
-
-    <h3>💳 Pagamento via PIX</h3>
-
-    <p id="chavePix">08584531181</p>
-
-    <button onclick="copiarPix()">📋 Copiar PIX</button>
-
-    <button onclick="finalizarCompra()">✅ Já paguei</button>
-
-  </div>
-</div>
+</body>
+</html>
