@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Roblox - LZ7 Vendas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <h1>ROBLOX</h1>
+</header>
+
+<section class="produtos">
+
+  <div class="card">
+    <h3>1200 ROBUX</h3>
+    <p class="preco">R$ 18.90</p>
+    <button onclick="abrirModal('1200 Robux','18.90')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <h3>1700 ROBUX</h3>
+    <p class="preco">R$ 22.99</p>
+    <button onclick="abrirModal('1700 Robux','22.99')">Comprar</button>
+  </div>
+
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="fecharModal()" class="fechar">&times;</span>
+    <h2 id="produtoNome"></h2>
+    <p id="produtoPreco"></p>
+    <button onclick="finalizarCompra()">Finalizar no Telegram</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
