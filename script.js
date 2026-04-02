@@ -28,3 +28,37 @@ function finalizarCompra(){
   const msg = `Quero comprar ${produtoAtual} por R$${precoAtual}`;
   window.open("https://t.me/Lz7vendas?text=" + encodeURIComponent(msg));
 }
+let carrinho = [];
+let total = 0;
+
+function adicionarCarrinho(nome, preco){
+  carrinho.push({nome, preco});
+  total += parseFloat(preco);
+
+  atualizarCarrinho();
+}
+
+function atualizarCarrinho(){
+  const lista = document.getElementById("listaCarrinho");
+  lista.innerHTML = "";
+
+  carrinho.forEach(item => {
+    const li = document.createElement("li");
+    li.innerText = `${item.nome} - R$${item.preco}`;
+    lista.appendChild(li);
+  });
+
+  document.getElementById("total").innerText = "Total: R$ " + total.toFixed(2);
+}
+
+function finalizarCompra(){
+  let msg = "🛒 Pedido:\n";
+
+  carrinho.forEach(item => {
+    msg += `${item.nome} - R$${item.preco}\n`;
+  });
+
+  msg += `\nTotal: R$${total.toFixed(2)}`;
+
+  window.open("https://t.me/Lz7vendas?text=" + encodeURIComponent(msg));
+}
